@@ -1,0 +1,20 @@
+<h1> edit need <h1>
+ <%= form_for @need do |f| %>
+
+ <p>
+   <%= f.label :Gender %><br />
+   <%= f.text_field :Gender %><br />
+</p>
+
+<p>
+   <%= f.label :health %><br />
+   <%= f.text_field :health %><br />
+</p>
+<p>
+	 <%= f.label :Age %><br />
+   <%= f.text_field :Age %><br />
+</p>
+<p>
+    <%= f.submit "Update post" , :action => :create %>
+</p>
+<% end %>

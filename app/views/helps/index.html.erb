@@ -1,0 +1,13 @@
+<h1> Help! </h1>
+<h2><%= link_to "new" ,new_help_path %></h2>
+	<hr/>
+	<hr/>
+<% @helps.each do |need| %>
+<h2><%= link_to need.name , help_path(need) %></h2>
+
+
+ <hr />
+
+<% end %>
+
+	
